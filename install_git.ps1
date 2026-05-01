@@ -1,0 +1,4 @@
+$installer = "d:\Web\perumu-hair-oil\Git-Setup.exe"
+Invoke-WebRequest -Uri "https://github.com/git-for-windows/git/releases/download/v2.45.0.windows.1/Git-2.45.0-64-bit.exe" -OutFile $installer
+Start-Process -FilePath $installer -ArgumentList '/VERYSILENT','/NORESTART' -Wait
+Remove-Item $installer
